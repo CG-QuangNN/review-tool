@@ -184,7 +184,7 @@ public class CommentJavaService {
 
                             nameProperty = nameProperty.substring(0, indexLast).trim();
                             if (line.contains("final ")) {
-                                if (!nameProperty.matches("[A-Z_]")) {
+                                if (!nameProperty.matches("[A-Z_]+")) {
                                     errorMessage.add(String.format("- Line %s: Tên hằng phải theo quy tắc CONSTANT_VARIABLE_NAME", i + 1));
                                 }
                             } else {

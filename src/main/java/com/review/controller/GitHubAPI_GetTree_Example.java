@@ -26,7 +26,14 @@ public class GitHubAPI_GetTree_Example {
 //            System.out.println(item);
 //        }
 //        commentFileJava("https://github.com/nguyenvanhung112/C0622G1-NguyenVanHung/tree/main/module3/Module3/case_study");
-        commentAllFile("https://github.com/nguyenvanhung112/C0622G1-NguyenVanHung/tree/main/module3/Module3/case_study/src/main/java/controlleráđá");
+//        commentAllFile("https://github.com/nguyenvanhung112/C0622G1-NguyenVanHung/tree/main/module3/Module3/case_study/src/main/java/controlleráđá");
+
+        String path = "";
+
+        StringBuilder stringBuilder = new StringBuilder();
+        commentFileType("https://github.com/nhatlh91/A0722I1-Le_Hong_Nhat/blob/main/module2/src/ss01_java_overal/bai_tap/ChangeMoney.java", stringBuilder);
+
+        System.out.println(stringBuilder);
     }
 
     public static String commentAllFile(String url) throws IOException {

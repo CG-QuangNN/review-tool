@@ -53,15 +53,81 @@ public class Main_readGGSheet {
                 .startRow(13)
                 .endRow(17)
                 .build());
+
+        topicDtoList.add(TopicDto.builder()
+                .topicNo(4)
+                .topic("4. Lớp và đối tượng trong Java")
+                .exercises(Arrays.asList("Xây dựng lớp QuadraticEquation",
+                        "Xây dựng lớp Fan"))
+                .startRow(18)
+                .endRow(19)
+                .build());
+
+        topicDtoList.add(TopicDto.builder()
+                .topicNo(5)
+                .topic("5. Access modifier")
+                .exercises(Arrays.asList("Access modifier",
+                        "Xây dựng lớp chỉ ghi trong Java"))
+                .startRow(20)
+                .endRow(21)
+                .build());
+
+        topicDtoList.add(TopicDto.builder()
+                .topicNo(7)
+                .topic("7. Abstract Class & Interface")
+                .exercises(Arrays.asList("Triển khai interface 'Resizeable'",
+                        "Triển khai interface 'Colorable'"))
+                .startRow(24)
+                .endRow(25)
+                .build());
+
+        topicDtoList.add(TopicDto.builder()
+                .topicNo(6)
+                .topic("6. Kế thừa")
+                .exercises(Arrays.asList("Lớp Circle và lớp Cylinder",
+                        "Lớp Point2D và lớp Point3D"))
+                .startRow(22)
+                .endRow(23)
+                .build());
+
+        topicDtoList.add(TopicDto.builder()
+                .topicNo(7)
+                .topic("7. Abstract Class & Interface")
+                .exercises(Arrays.asList("Triển khai interface 'Resizeable'",
+                        "triển khai interface 'Colorable' "))
+                .startRow(24)
+                .endRow(25)
+                .build());
+
+
+
+
+
+        topicDtoList.add(TopicDto.builder()
+                .topicNo(9)
+                .topic("9. Tổng quan về java web")
+                .exercises(Arrays.asList("Ứng dụng Product Discount Calculator"))
+                .startRow(17)
+                .endRow(17)
+                .build());
+
+        topicDtoList.add(TopicDto.builder()
+                .topicNo(10)
+                .topic("10.Jsp và JSTL")
+//                .exercises(Arrays.asList("Hiển thị danh sách khách hàng"))
+                .exercises(Arrays.asList("Ứng dụng Calculator"))
+                .startRow(19)
+                .endRow(19)
+                .build());
     }
 
     public static void main(String[] args) throws Exception {
         //============== Các thông số bắt buộc phải config ==============
-        String sheetName = "A0722I1";
-        String endColumn = "AD";
-        int topicNo = 3;
+        String sheetName = "C0722G1";
+        String endColumn = "AG";
+        int topicNo = 10;
         newReview = true;
-        final String spreadsheetId = "1efV2twW7CuPjwEy8JGjY899-khFwfqkNha-GMx_5U5k";
+        final String spreadsheetId = "1ebzVMscU6MjmUIWphKeJ4_6fM5qtQVkxdW1WBAkxiFc";
         //============== Các thông số bắt buộc phải config ==============
 
         StringBuilder totalMessage = new StringBuilder();
